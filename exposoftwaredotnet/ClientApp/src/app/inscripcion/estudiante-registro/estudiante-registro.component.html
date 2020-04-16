@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 offset-md-4">
+            <h3>JORNADA CIENTIFICA DE INVESTIGACION TECNOLOGICA</h3>
+            <br>
+            <h4>Datos del estudiante</h4>
+            <form>
+
+                <div class="form-group">
+                    <label>Identificacion</label>
+                    <input type="text" name="identificacion" [(ngModel)]="estudiante.identificacion"
+                        class="form-control" />
+                </div>
+
+            <div class="form-row">
+                <div class="col">
+                    <label>Primer Nombre</label>
+                    <input type="text" name="primerNombre" [(ngModel)]="estudiante.primerNombre" class="form-control" />
+                </div>
+
+                <div class="col">
+                    <label>Segundo Nombre</label>
+                    <input type="text" name="segundoNombre" [(ngModel)]="estudiante.segundoNombre" class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+                    <label>Primer Apellido</label>
+                    <input type="text" name="primerApellido" [(ngModel)]="estudiante.primerApellido"
+                        class="form-control" />
+                </div>
+
+                <div class="col">
+                    <label>Segundo Apellido</label>
+                    <input type="text" name="segundoApellido" [(ngModel)]="estudiante.segundoApellido"
+                        class="form-control" />
+                </div>
+            </div>
+
+                <div class="form-group">
+                    <label>Celular</label>
+                    <input type="text" name="celular" [(ngModel)]="estudiante.celular" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Correo</label>
+                    <input type="email" name="correo" [(ngModel)]="estudiante.correo" class="form-control" />
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-success" (click)="add()">Guardar</button>
+                    <button class="btn btn-success" type="reset">Cancelar</button>
+                    <a class="badge badge-success" [routerLink]="['/proyectoRegistro']">
+                        <button class="btn btn-success" type="button">Siguiente</button>
+                    </a>
+                    
+                </div>
+           
+            </form>
+        </div>
+    </div>
+</div>

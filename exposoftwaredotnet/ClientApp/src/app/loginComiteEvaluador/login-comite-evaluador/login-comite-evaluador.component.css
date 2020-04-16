@@ -1,0 +1,18 @@
+.btn-group{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-primary{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+H4 { 
+    text-align: center;
+    margin-top: 6mm;
+}

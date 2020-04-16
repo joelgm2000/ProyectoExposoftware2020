@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 offset-md-1">
+            <h3>JORNADA CIENTIFICA DE INVESTIGACION TECNOLOGICA</h3>
+            <br>
+            <h4>Datos del Proyecto</h4>
+            <form>
+                <div class="form-group">
+                    <label>Identificacion del docente lider</label>
+                    <input type="text" name="identificacion" [(ngModel)]="proyecto.identificacion"
+                        class="form-control" />
+                </div>
+
+            <div class="form-row">
+                <div class="col">
+                    <label>Identificacion primer estudiante</label>
+                    <input type="text" name="estudiante1" [(ngModel)]="proyecto.estudiante1" class="form-control" />
+                </div>
+                <div class="col">
+                    <label>Identificacion segundo estudiante</label>
+                    <input type="text" name="estudiante2" [(ngModel)]="proyecto.estudiante2" class="form-control" placeholder="Opcional"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Titulo del proyecto</label>
+                <input type="text" name="nombre" [(ngModel)]="proyecto.nombre" class="form-control" />
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+                    <label>Asignatura</label>
+                    <select class="form-control" [(ngModel)]="proyecto.asignatura" name="asignatura">
+                      <option>02</option>
+                      <option>08</option>
+                      <option>04</option>
+                      <option>06</option>
+                      <option>07</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label>Semestre</label>
+                    <select class="form-control" [(ngModel)]="proyecto.semestre" name="semestre">
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                    </select>
+                  </div>
+            </div>
+
+            <div class="form-group">
+                <label for="resumen">Resumen</label>
+                <textarea class="form-control" [(ngModel)]="proyecto.resumen" rows="3" name="resumen"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="metodologia">Metodologia</label>
+                <textarea class="form-control" [(ngModel)]="proyecto.metodologia" rows="3" name="metodologia"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="resultados">Resultados</label>
+                <textarea class="form-control" [(ngModel)]="proyecto.resultados" rows="3" name="resultados"></textarea>
+            </div>
+
+
+                <div class="text-center">
+                    <button class="btn btn-success" (click)="add()">Registrar</button>
+                    <button class="btn btn-success" type="reset">Cancelar</button>            
+                </div>
+           
+            </form>
+        </div>
+    </div>
+</div>
